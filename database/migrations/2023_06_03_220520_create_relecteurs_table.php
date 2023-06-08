@@ -11,16 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('conferences', function (Blueprint $table) {
+        Schema::create('relecteurs', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->text('sigle');
-            $table->string('theme');
-            $table->dateTime('dateSoumitted');
-            $table->dateTime('dateInscription');
-            $table->dateTime('dateDebut');
-            $table->dateTime('dateFin');
+            $table->string('email')->unique();
+            $table->text('critere_eveluation');
+            $table->unsignedBigInteger('article_id');
             $table->timestamps();
+            $table->foreign('article_id')->references('id')->on('articles')->onDelete('cascade');
         });
     }
 
@@ -29,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('conferences');
+        Schema::dropIfExists('relecteurs');
     }
 };

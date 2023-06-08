@@ -5,14 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Conference extends Model
+class Relecteur extends Model
 {
     use HasFactory;
-    
-    public function article()
+    public function Article()
     {
-        return $this->belongsTo(Article::class);
-        
+        return $this->hasMany(Article::class);
     }
 
 }

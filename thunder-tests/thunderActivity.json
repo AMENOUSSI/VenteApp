@@ -1,0 +1,46 @@
+[
+  {
+    "_id": "b0502e2e-8b75-4142-ac55-1051a50c0874",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://127.0.0.1:8000/register",
+    "url": "http://127.0.0.1:8000/register",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-06-05T06:15:58.076Z",
+    "modified": "2023-06-05T06:15:58.076Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\":\"AMENOUSSI\",\n  \"email\":\"jules@gmail.com\",\n  \"password\":\"jules1234\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "696d8b8e-4894-4801-9763-02dc8a12a528",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://127.0.0.1:8000/api/register",
+    "url": "http://127.0.0.1:8000/conference/store",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-06-05T06:17:41.520Z",
+    "modified": "2023-06-08T17:07:19.874Z",
+    "headers": [
+      {
+        "name": "User-Agent",
+        "value": "Thunder Client (https://www.thunderclient.com)",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\":\"AMENOUSSI\",\n  \"email\":\"jules@gmail.com\",\n  \"password\":\"123456\",\n \n  \n}",
+      "form": []
+    },
+    "tests": []
+  }
+]
